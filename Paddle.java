@@ -3,11 +3,11 @@ package PongGame;
 import java.awt.*;
 import java.awt.event.*;
 public class Paddle extends Rectangle{
-    int id;
+    	int id;
 	int yVelocity;
 	int speed = 10;
 	
-	Paddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT, int id){
+	public Paddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT, int id){
 		super(x,y,PADDLE_WIDTH,PADDLE_HEIGHT);
 		this.id=id;
 	}
@@ -56,7 +56,7 @@ public class Paddle extends Rectangle{
 		yVelocity = yDirection;
 	}
 	public void move() {
-		y= y + yVelocity;
+		y = y + yVelocity;
 	}
 	public void draw(Graphics g) {
 		if(id==1)
